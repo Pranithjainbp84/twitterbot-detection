@@ -1,4 +1,4 @@
-# Twitter Bot or Not
+# Twitterbot - Detection
 
 ## Twitter bot detection with supervised machine learning
 
@@ -32,18 +32,6 @@ I used the [Twitter Bot Accounts](https://www.kaggle.com/davidmartngutirrez/twit
 
 I chose features and model paramters that would optimize for a balance between precision and recall and a high ROC AUC (area under the curve) score. Essentially I wanted the model to accurately label bots as such, but not by simply labeling _everything_ as a bot.
 
-**Final XGBoost model scores**
-
-- Accuracy: 87.7%
-- Precision: 81.3%
-- Recall: 80.9%
-- ROC AUC: 93.4%
-
-After fitting the model on the full training set, I created a web application with Flask that allowed users to see the bot-likelihood probability of any Twitter account by use of the Twitter API.
-
-Please check it out for yourself! --> [Twitter Bot or Not](https://twitter-bot-or-not.herokuapp.com/)
-
-You can also view my [presentation slides](https://github.com/scrapfishies/twitter-bot-detection/blob/main/presentation_deck.pdf) for the project.
 
 ### Suggestions for future work
 
